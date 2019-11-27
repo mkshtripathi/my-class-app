@@ -1,0 +1,18 @@
+<div class="row">
+        <div class="col-xs-12">
+            <button class="btn btn-success">Add new unit</button>
+        </div>
+        <hr><hr>
+        <div class="col-xs-12">
+            <div  *ngFor="let chapt of chapters">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h4 class="list-group-item-heading">{{ chapt.unit }}</h4>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href='#'><p class="list-group-item-text">{{chapt.description}}</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
